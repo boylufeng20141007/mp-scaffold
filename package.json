@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "webpack -w --env.dev",
     "clean:dist": "rimraf dist/*",
-    "build": "npm run clean:dist && webpack --env"
+    "build": "npm run clean:dist && webpack --env",
+    "create:page": "node --harmony ./shell/createPage.js"
   },
   "keywords": [
     "mini program",
@@ -20,6 +21,7 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
     "babel-runtime": "^6.26.0",
+    "chalk": "^2.4.1",
     "copy-webpack-plugin": "^4.5.1",
     "css-loader": "^0.28.11",
     "eslint": "^4.19.1",
@@ -27,6 +29,8 @@
     "eslint-loader": "^2.0.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "friendly-errors-webpack-plugin": "^1.7.0",
+    "fs-extra": "^6.0.1",
+    "inquirer": "^5.2.0",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
     "style-loader": "^0.21.0",
