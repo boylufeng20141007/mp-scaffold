@@ -26,7 +26,7 @@ const rules = [
     test: /\.css$/,
     use: ExtractTextPlugin.extract({
       fallback: 'style-loader',
-      use: 'css-loader'
+      use: ['css-loader', 'postcss-loader']
     })
   },
   {
@@ -35,6 +35,7 @@ const rules = [
       fallback: 'style-loader',
       use: [
         'css-loader',
+        'postcss-loader',
         'sass-loader'
       ]
     })
@@ -45,6 +46,7 @@ const rules = [
       fallback: 'style-loader',
       use: [
         'css-loader',
+        'postcss-loader',
         'stylus-loader'
       ]
     })
